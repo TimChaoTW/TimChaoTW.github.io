@@ -10,7 +10,7 @@
 
     <!-- Page Title -->
     
-        <title>Hello World | Hexo</title>
+        <title>JavaScript =&gt; Object- 新增與刪除 | Hexo</title>
     
     <link rel="icon" href="/img/avatar-default.png">
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
@@ -56,7 +56,7 @@
         <p class="header-title">
              
                 
-                    Hello World
+                    JavaScript =&gt; Object- 新增與刪除
                 
             
         </p>  
@@ -93,7 +93,7 @@
     
         <!-- Article Catalog -->
         <div class="catalog-dropdown col-xs-12 col-sm-12">
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+            
         </div>
     
 
@@ -103,25 +103,43 @@
 
         
         
+            <!-- Article Img Lightbox -->
+            <div class="gallery">
+    
+    
+    <div class="lightbox">
+        <!-- Close Button -->
+        <span class="close-gallery">&times;</span>
+        
+        <!-- Photo -->
+        <img class="gallery-photo">
+    </div>
+</div>
+        
     
 
     
 
     <!-- Article Content -->
     <div class="post-content">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <p>1.object 在程式語言中物件通常以{ }表示，個人認為他有點像 array(陣列)都是資料的集合。</p>
+<p>2.而物件的特色在它擁有屬性與值(key&amp;value)，給予特定的 key 可以取得對應的 value。</p>
+<p>舉個例子，我們常使用電子信箱。然而一個網站會有很多的用戶，因此當你要使用時你必須要告訴網誌你的郵箱地址或是帳號並給予他密碼你才能夠登入。</p>
+<p>如圖所示：<br><img src="/images/object-new-delete.png" style="width: 80%;margin:auto"/></p>
+<p>在電腦上我輸入 email 只和密碼並成功登入 gmail 中了。(物件中的值可以是物件，用點的方式繼續拿取裡面的值)。</p>
+<p>3.新增物件與刪除物件：利用物件名稱.屬性＝值去新增物件，用 delete 指令刪除物件。</p>
+<p>例如：原本家裡有四個人爺爺、爸爸、媽媽和我今天爺爺過世了用 delete 指令爺爺就被刪除了。</p>
+<p>隔沒多久妹妹出生了，利用物件名稱.屬性＝值妹妹就在家中出現了。</p>
+<p>如圖所示：<br><img src="/images/object-new-delete-1.png" style="width: 80%;margin:auto"/></p>
+<p>過世的爺爺從 parentHouse 中刪除了，妹妹被加入為新成員了。</p>
+<p>還可以這樣做<br>當要插入特殊符號時我們可以用 物件名稱[]的方式插入</p>
+<p>如圖所示：</p>
+<img src="/images/object-new-delete-2.png" style="width: 80%;margin:auto;"/>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>家裡有錢了還領養了一隻小貓<br>碎碎念：</p>
+<p>1.在 Js 中只有兩種分類純值和物件。</p>
+<p>2.物件實字 (Object Literals)：const parentHouse &#x3D; { }這種建立物件的方式叫做物件實字</p>
+<p>3.建構式(Constructor)：const myHouse &#x3D; new Object(parentHouse) 用來建立新的物件。</p>
   
     </div> 
 
