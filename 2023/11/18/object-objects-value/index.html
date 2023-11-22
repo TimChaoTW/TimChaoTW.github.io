@@ -10,7 +10,7 @@
 
     <!-- Page Title -->
     
-        <title>JavaScript =&gt; 物件與純值 | Hexo</title>
+        <title>JavaScript =&gt; 物件與純值 | Welcome to Tim&#39;s talk</title>
     
     <link rel="icon" href="/img/avatar-default.png">
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
@@ -143,28 +143,28 @@
 <ol>
 <li>普通物件（Object）：</li>
 </ol>
- <pre class="prettyprint"><code class="language-yourLanguage">
+ <pre class="prettyprint"><code class="JavaScript">
     let person = &#123;
     name: "Alice",
     age: 30&#125;;</code></pre>
 
 <ol start="2">
-<li><p>數組（Array）：<pre class="prettyprint"><code class="language-yourLanguage">let fruits = ["apple", "banana", "cherry"];</code></pre></p>
+<li><p>數組（Array）：<pre class="prettyprint"><code class="JavaScript">let fruits = ["apple", "banana", "cherry"];</code></pre></p>
 </li>
 <li><p>函數（Function）：</p>
-<pre class="prettyprint"><code class="language-yourLanguage"> function greet(name) &#123;
+<pre class="prettyprint"><code class="JavaScript"> function greet(name) &#123;
 
    return "Hello, " + name + "!";&#125;</code></pre>
 </li>
 <li><p>日期（Date）：</p>
-<pre class="prettyprint"><code class="language-yourLanguage">let now = new Date();</code></pre>
+<pre class="prettyprint"><code class="JavaScript">let now = new Date();</code></pre>
 </li>
-<li><p>正則表達式（RegExp）： <pre class="prettyprint"><code class="language-yourLanguage">let pattern = /hello/;</code></pre></p>
+<li><p>正則表達式（RegExp）： <pre class="prettyprint"><code class="JavaScript">let pattern = /hello/;</code></pre></p>
 </li>
-<li><p>錯誤類型（Error）： <pre class="prettyprint"><code class="language-yourLanguage">let error = new Error("Something went wrong");</code></pre></p>
+<li><p>錯誤類型（Error）： <pre class="prettyprint"><code class="JavaScript">let error = new Error("Something went wrong");</code></pre></p>
 </li>
 <li><p>數學（Math）：</p>
-<pre class="prettyprint"><code class="language-yourLanguage">let pi = Math.PI; // 3.141592653589793
+<pre class="prettyprint"><code class="JavaScript">let pi = Math.PI; // 3.141592653589793
 
        let squareRoot = Math.sqrt(16); // 4</code></pre></li>
 </ol>
@@ -172,8 +172,7 @@
 
 <p>舉個例子：陣列是一種物件，因此可以被賦值。值可以是字串，也可以是陣列。</p>
 <p>然而字串是純值的一種，他沒有辦法被賦值。</p>
-<pre class="prettyprint"><code class="language-yourLanguage">
-    let myArray = [1, 2, 3, 4];
+<pre class="prettyprint"><code class="JavaScript">      let myArray = [1, 2, 3, 4];
     myArray.sayHello = ["你好"];
     myArray.sister = "Kim";
     console.log(myArray);
@@ -187,7 +186,7 @@
 結果顯示，陣列裡出現了陣列Array: sayHello與字串String:sister。
 
 <p>而 newString 沒有辦法被賦值因此執行結果還是只有哈哈的字串。</p>
-<pre class="prettyprint"><code class="language-yourLanguage">
+<pre class="prettyprint"><code class="JavaScript">
 function car(make, model, year) &#123;
 this.make = make;
 this.model = model;
